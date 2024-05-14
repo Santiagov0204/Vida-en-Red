@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('file:///H:/carpeta/UNAD/2024%20-1/PDG/T4/app/vida%20en%20red/db71a3b7-b160-412c-83e8-ca4e618c1fd4%20(4)%20(1).jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            background-color: #add8e6; /* Color del rectángulo azul celeste */
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Coloca el menú encima de la imagen de fondo */
+        }
+
+        .tab {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tab button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tab img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .tab-name {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .tab:not(:last-child) {
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tab">
+            <button id="btn-mi-cuenta">
+                <img src="H:\carpeta\UNAD\2024 -1\PDG\T4\app\vida en red\Icono_cuenta.png" alt="Mi Cuenta">
+                <span class="tab-name">Mi Cuenta</span>
+            </button>
+        </div>
+        <div class="tab">
+            <button id="btn-banco-preguntas">
+                <img src="H:\carpeta\UNAD\2024 -1\PDG\T4\app\vida en red\Icono_BancoP.png" alt="Banco de Preguntas">
+                <span class="tab-name">Banco de Preguntas</span>
+            </button>
+        </div>
+        <div class="tab">
+            <button id="btn-estados-animo">
+                <img src="H:\carpeta\UNAD\2024 -1\PDG\T4\app\vida en red\Icono_Estaod.png" alt="Estados de Ánimo">
+                <span class="tab-name">Estados de Ánimo</span>
+            </button>
+        </div>
+        <div class="tab">
+            <button id="btn-mensajes">
+                <img src="H:\carpeta\UNAD\2024 -1\PDG\T4\app\vida en red\Iconos_Mensajes.png" alt="Mensajes">
+                <span class="tab-name">Mensajes</span>
+            </button>
+        </div>
+        <div class="tab">
+            <button id="btn-control-citas">
+                <img src="H:\carpeta\UNAD\2024 -1\PDG\T4\app\vida en red\Iconos_Control.png" alt="Control de Citas">
+                <span class="tab-name">Control de Citas</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Obtener referencias a los botones
+        const btnMiCuenta = document.getElementById('btn-mi-cuenta');
+        const btnBancoPreguntas = document.getElementById('btn-banco-preguntas');
+        const btnEstadosAnimo = document.getElementById('btn-estados-animo');
+        const btnMensajes = document.getElementById('btn-mensajes');
+        const btnControlCitas = document.getElementById('btn-control-citas');
+
+        // Agregar eventos de clic a los botones
+        btnMiCuenta.addEventListener('click', () => {
+            window.location.href = "file:///H:/carpeta/UNAD/2024%20-1/PDG/T4/app/vida%20en%20red/Mi%20cuenta.html"; // Redirigir a la página de Mi Cuenta
+        });
+
+        btnBancoPreguntas.addEventListener('click', () => {
+            window.location.href ="file:///H:/carpeta/UNAD/2024%20-1/PDG/T4/app/vida%20en%20red/Banco%20de%20Preguntas.html"; // Redirigir a la página de Banco de Preguntas
+        });
+
+        btnEstadosAnimo.addEventListener('click', () => {
+            window.location.href = file:///H:/carpeta/UNAD/2024%20-1/PDG/T4/app/vida%20en%20red/Estados%20de%20%C3%81nimo.html; // Redirigir a la página de Estados de Ánimo
+        });
+
+        btnMensajes.addEventListener('click', () => {
+            window.location.href = 'file:///H:/carpeta/UNAD/2024%20-1/PDG/T4/app/vida%20en%20red/Mensajes.html'; // Redirigir a la página de Mensajes
+        });
+
+        btnControlCitas.addEventListener('click', () => {
+            window.location.href = 'control_citas.html'; // Redirigir a la página de Control de Citas
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Preguntas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #add8e6; /* Azul claro */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .question-box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .question {
+            font-weight: bold;
+            color: black;
+        }
+
+        .answer {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        #save-button {
+            background-color: #4169e1; /* Azul rey */
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #save-button:hover {
+            background-color: #6495ed; /* Azul más claro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question-box">
+            <div class="question">1. ¿Cómo te sientes el día de hoy?</div>
+            <textarea class="answer" rows="3"></textarea>
+        </div>
+
+        <div class="question-box">
+            <div class="question">2. ¿Has tenido problemas para conciliar el sueño?</div>
+            <textarea class="answer" rows="3"></textarea>
+        </div>
+
+        <div class="question-box">
+            <div class="question">3. ¿Qué te hace sentir ansiedad?</div>
+            <textarea class="answer" rows="3"></textarea>
+        </div>
+
+        <!-- Aquí puedes agregar más preguntas -->
+
+        <div class="question-box">
+            <div class="question">10. ¿Cómo te sientes respecto al futuro?</div>
+            <textarea class="answer" rows="3"></textarea>
+        </div>
+
+        <button id="save-button">Guardar</button>
+    </div>
+</body>
+</html>
